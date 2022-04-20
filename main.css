@@ -1,0 +1,217 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: white
+}
+
+header{
+	background-image: url(/imagenes/backgroundmobile.png);
+}
+
+.headerLogo{
+	text-align: center;
+	padding-top: 20px;
+}
+
+header h1,p{
+	text-align: center;
+	color: aliceblue;
+	font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header p{
+	padding-bottom: 15px;
+	font-weight: 700;
+}
+
+nav{
+	background-color: grey;
+}
+
+nav li{
+	list-style: none;
+	display: inline;
+	padding-left: 30px;
+	padding-right: 25px
+}
+
+.mainH2{
+	text-align: center;
+	font-size: 14px;
+	padding-top:10px;
+	background-color: black ;
+	color: white;
+	border: 2px grey solid;
+}
+.mainH2 h2{
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.articulo1, h3{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.divImg{
+	border: 5px solid black;
+	width: max-content;
+}
+.divImg img{
+	width: 310px;
+	height: 400px;
+}
+.divImg2{
+	border: 5px solid black;
+	width: max-content;
+	padding-top: 25px;
+}
+.divImg2 img{
+	width: 310px;
+	height: 400px;
+}
+
+.divImg3{
+	border: 5px solid black;
+	width: max-content;
+}
+.divImg3 img{
+	width: 310px;
+	height: 400px;
+}
+
+.articulo1{
+	text-align:center ;
+}
+
+.articulo1 h3{
+	letter-spacing: 5px;
+}
+
+.articulo1 p{
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	color: red;
+}
+
+.articulo2{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.articulo2 h3{
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.articulo2 p{
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	color: red;
+}
+
+.articulo3 h3{
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+
+.articulo3 p{
+	padding-top: 20px;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	color: red;
+	padding-bottom: 20px;
+}
+
+aside h4{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.asideH4{
+	background-color: black;
+	color: white;
+}
+
+.asideUl{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	border: 2px solid black;
+	padding:5px ;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+footer p{
+	color: black;
+	font-size: 14px;
+}
+
+.grid-container{
+	display: grid;
+	grid-area:"header"
+	"nav"
+	"main"
+	"aside"
+	"footer";
+}
+
+@media screen and (min-width:720px){
+
+header h1{
+	letter-spacing: 10px;
+}
+
+header p{
+	letter-spacing: 5px;
+}
+
+.articulo1 {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content:center;
+	align-items: center;
+	gap: 10px
+	
+	}
+
+	.articulo2{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content:center;
+		align-items: center;
+		gap: 10px;
+	}
+	
+	.articulo3{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content:center;
+		align-items: center;
+		gap: 10px;
+	}
+	footer p{
+		letter-spacing: 5px;
+	}
+}
