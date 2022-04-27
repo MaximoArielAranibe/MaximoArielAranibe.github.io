@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: white
+	background-color: #EEEEEE;
 }
 
 header{
@@ -31,6 +31,7 @@ header h1{
 header p{
 	padding-bottom: 15px;
 	font-weight: 700;
+	color: #FCD900;
 }
 
 nav{
@@ -170,21 +171,26 @@ footer p{
 
 .grid-container{
 	display: grid;
+	/*
 	grid-area:"header"
 	"nav"
 	"main"
 	"aside"
 	"footer";
+	*/
 }
-
+/*MEDIA QUERIES*/
 @media screen and (min-width:720px){
 
 header h1{
 	letter-spacing: 10px;
+	font-size: 60px;
+	padding-left: 35px;
 }
 
 header p{
 	letter-spacing: 5px;
+	font-size: 30px;
 }
 
 .articulo1 {
@@ -214,4 +220,82 @@ header p{
 	footer p{
 		letter-spacing: 5px;
 	}
+	nav ul{
+		padding-left: 250px;
+
+	}
+}
+
+@media screen and (min-width:1024px){
+nav ul{
+	padding-left: 360px;
+
+}
+
+}
+
+@media screen and (min-width:1440px){
+header h1{letter-spacing: 33px;
+}
+header p{
+	letter-spacing: 18px;
+}
+nav ul{
+	font-size: 20px;
+	padding-left: 500px;
+}
+nav li{
+	padding-right: 150px;
+}
+}
+
+/*Seccion 2*/
+
+
+.flex-container-seccion-1{
+	background-color: white;
+	display: flex;
+	flex-flow: column ;
+	border: black 2px solid;
+	font-size: 33px;
+}
+
+.flex-container-seccion-1 p{
+	text-align: center;
+	color: black;
+
+}
+
+.seccionFlex1{
+background-color: #DDDDDD;
+border: black 2px solid;
+}
+
+.seccionFlex2{
+background-color: #DFDFDE;
+border: black 2px solid;
+}
+
+.seccionFlex3{
+background-color: #EEEEEE;
+border: black 2px solid;
+
+}
+
+.seccionFlex4{
+background-color: #F7F5F2;
+border: black 2px solid;
+align-items: center;
+align-content: center;
+justify-content: center;
+
+}
+
+@media screen and(min-width:768px){
+.bodyClass{
+									/* PROFE ACA ME DI CUENTA QUE LO HICE PRIMERO EN ESCRITORIO INTENTE IR ADAPTANDO
+									A TABLET Y MOBILE PERO ME RE
+									TILTEE XD perdon */
+}
+}
 }
